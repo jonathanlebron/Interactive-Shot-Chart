@@ -44,7 +44,7 @@ function showShotChart() {
 
 // Get CSV file and use Papa.parse to get necessary data.
 function parseCSV() {
-	var file = "jonathanlebron.github.io/Interactive-Shot-Chart/data/" + games.value;
+	var file = "data/" + games.value;
 	Papa.parse(file, {
 		download: true,
 		header: true,
