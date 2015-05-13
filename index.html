@@ -26,7 +26,17 @@
             <section>
                 <h3>Welcome!</h3>
                 <p>The Interactive-Shot-Chart is a project that displays missed/made shots by NBA teams. Select a game below to get started!</p>
-
+                <select id="games" onchange="showShotChart()">
+                    <option disabled selected> -- Select game to display</option>
+                    <option value="20091228.BOSGSW.csv" home="GSW" away="BOS">BOS vs GSW (12/28/2009)</option>
+                    <option value="20091229.OKCWAS.csv" home="WAS" away="OKC">OKC vs WAS (12/29/2009)</option>
+                    <option value="20091230.ATLCLE.csv" home="CLE" away="ATL">ATL vs CLE (12/30/2009)</option>
+                    <option value="20091231.MIASAS.csv" home="SAS" away="MIA">MIA vs SAS (12/31/2009)</option>
+        		</select>
+                <br/>
+                <p class="teamName">Away Team: <span id="awayTeam"></span></p>
+                <p class="teamName">Home Team: <span id="homeTeam"></span></p>
+                <div id="container"></div>
             </section>
             <footer>
                 <p>This project is maintained by <a href="https://github.com/jonathanlebron">jonathanlebron</a></p>
@@ -34,5 +44,8 @@
             </footer>
         </div>
         <script src="javascripts/scale.fix.js"></script>
+        <script src="js/vendor/papaparse.min.js"></script>
+        <script src="js/vendor/kinetic-v5.1.0.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
