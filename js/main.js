@@ -11,24 +11,24 @@
 	// Setup KineticJS to handle drawing on canvas
 	var stage = new Kinetic.Stage({
 		container: 'container',
-	    width: 658,
-	    height: 350
+		width: 658,
+		height: 350
 	});
 
 	var layer = new Kinetic.Layer();
 
 	var text = new Kinetic.Text({
-	    x: stage.width()/2 - 80,
-	    y: 20,
-	    fontFamily: 'Helvetica Neue',
-	    fontSize: 14,
-	    text: '',
-	    fill: 'black',
+	  x: stage.width()/2 - 80,
+	  y: 20,
+	  fontFamily: 'Helvetica Neue',
+	  fontSize: 14,
+	  text: '',
+	  fill: 'black',
 	});
 
 	var textBkgd = new Kinetic.Rect({
-	    x: 0,
-	    y: 0,
+	  x: 0,
+	  y: 0,
 		width: 0,
 		height: 0,
 		fill: 'white',
