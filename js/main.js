@@ -18,17 +18,17 @@
 	var layer = new Kinetic.Layer();
 
 	var text = new Kinetic.Text({
-	  x: stage.width()/2 - 80,
-	  y: 20,
-	  fontFamily: 'Helvetica Neue',
-	  fontSize: 14,
-	  text: '',
-	  fill: 'black',
+		x: stage.width()/2 - 80,
+		y: 20,
+		fontFamily: 'Helvetica Neue',
+		fontSize: 14,
+		text: '',
+		fill: 'black',
 	});
 
 	var textBkgd = new Kinetic.Rect({
-	  x: 0,
-	  y: 0,
+		x: 0,
+		y: 0,
 		width: 0,
 		height: 0,
 		fill: 'white',
@@ -38,7 +38,7 @@
 	// This function is called when a user selects a game from drop down
 	function showShotChart() {
 		layer.removeChildren();
-	 	homeTeam = games.options[games.selectedIndex].getAttribute("home");
+		homeTeam = games.options[games.selectedIndex].getAttribute("home");
 		awayTeam = games.options[games.selectedIndex].getAttribute("away");
 		document.getElementById("awayTeam").innerHTML = "<h3>"+awayTeam+"</h3>";
 		document.getElementById("homeTeam").innerHTML = "<h3>"+homeTeam+"</h3>";
